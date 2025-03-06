@@ -6,6 +6,7 @@
     <title>TravelBloom - Explore Destinations</title>
     <link rel="stylesheet" href="styles.css">
     <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
     <header>
@@ -16,10 +17,10 @@
                 <li><a href="about_us.html">About Us</a></li>
                 <li><a href="contact_us.html">Contact Us</a></li>
             </ul>
-            <div class="search-bar">
-                <input type="text" placeholder="Enter a destination or keyword">
-                <button class="search-btn">Search</button>
-                <button class="clear-btn">Clear</button>
+            <div class="search-bar" style="">
+                <input type="text" id="search-input" placeholder="Enter a destination or keyword">
+                <button class="search-btn" id="search-button">Search</button>
+                <button class="clear-btn" id="clear-button">Clear</button>
             </div>
         </nav>
     </header>
@@ -37,5 +38,10 @@
             <a href="#"><i class="fab fa-youtube"></i></a>
         </div>
     </section>
+    <section id="recommendations" style="color:black;">
+        <h1>Recommended Destinations</h1>
+        <div id="results-container"></div>
+    </section>
+    <script src="script.js"></script>
 </body>
 </html>
